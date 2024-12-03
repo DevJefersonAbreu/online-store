@@ -6,7 +6,6 @@ const Footer: React.FC = () => {
   return (
     <S.Container>
       <div className="footer-content">
-        {/* Informações de contato */}
         <div className="contact-info">
           <h3>Contato</h3>
           <p>Endereço: Av. Central, 1234 - Centro</p>

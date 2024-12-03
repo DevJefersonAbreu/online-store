@@ -1,21 +1,19 @@
 "use client";
 import React from "react";
 import * as S from "./styles";
-import Header from "@/components/shared/header/header";
-import Product from "@/components/home/product/produc";
 import Footer from "@/components/shared/footer/footer";
-import ImageCarousel from "@/components/home/imageCarousel/imageCarousel";
+import Header from "@/components/shared/header/header";
+import WelcomeStore from "@/components/home/welcomeStore/welcomeStore";
 
 
 const Home: React.FC = () => {
-
   return (
     <S.Container>
-     <Header/>
-     <ImageCarousel />
-     <Product/>
-     <Footer/>
+      <Header />
+      < WelcomeStore />
+      <Footer />
     </S.Container>
   );
 };
+
 export default Home;
