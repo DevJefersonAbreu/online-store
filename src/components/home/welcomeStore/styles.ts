@@ -23,22 +23,22 @@ export const Subtitle = styled.h4`
 
 export const Title = styled.h1`
   font-size: 70px;
-  color: #088178;
+  color:  #1a4b7c;
   margin-bottom: 20px;
 `;
 
 export const Button = styled.button`
   font-size: 20px;
   font-weight: 700;
-  color: #088178;
+  color: #000;
   background-color: transparent;
-  border: 2px solid #088178;
+  border: 2px solid  #1a4b7c;
   padding: 15px 30px;
   cursor: pointer;
   transition: 0.3s;
 
   &:hover {
-    background-color: #088178;
+    background-color: #1a4b7c;
     color: white;
   }
 `;
