@@ -7,7 +7,7 @@ export const Container = styled.footer`
 
   .newsletter {
     padding: 40px 10%;
-    background: url('/pattern-bg.png') #041e42;
+    background: url('/pattern-bg.png') #1a4b7c;
     
     .newsletter-content {
       max-width: 1200px;
@@ -20,11 +20,11 @@ export const Container = styled.footer`
       }
 
       p {
-        color:  #E6A822;
+        color:  #f0f0f0;
         margin-bottom: 20px;
 
         span {
-          color:  #FFC300;
+          color:  #29a7e1;
         }
       }
 
@@ -41,13 +41,13 @@ export const Container = styled.footer`
           background: #f5f5f5;
           
           &::placeholder {
-            color: #ffbd27;
+            color:#333333;
           }
         }
 
         button {
           padding: 12px 24px;
-          background: #008170;
+          background: #29a7e1;
           color: white;
           border: none;
           border-radius: 4px;
@@ -55,7 +55,8 @@ export const Container = styled.footer`
           transition: background 0.3s;
 
           &:hover {
-            background: #006857;
+            background: #fff;
+            color: #000;
           }
         }
       }
