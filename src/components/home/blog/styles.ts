@@ -14,6 +14,27 @@ export const Content = styled.main`
   width: 100%;
 `;
 
+export const BannerImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(0.7); 
+  
+`;
+
+export const SmallBannerImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(0.5); 
+`;
+
+
+
 export const MainBanners = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -31,6 +52,7 @@ export const Banner = styled.div`
   background: #f4f4f4;
   border-radius: 8px;
   overflow: hidden;
+
 `;
 
 export const BannerContent = styled.div`
@@ -45,6 +67,7 @@ export const Tag = styled.span`
   font-size: 0.875rem;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+  color: #e6e6e6;
 `;
 
 export const Title = styled.h2`
@@ -52,23 +75,26 @@ export const Title = styled.h2`
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  color: #fff;
 `;
 
 export const Description = styled.p`
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  color: #f0f0f0 ;
 `;
 
 export const Button = styled.button`
   padding: 0.75rem 1.5rem;
-  background: white;
-  border: 1px solid #333;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    background: #333;
+    background: #29a7e1;
     color: white;
   }
 `;
@@ -102,9 +128,11 @@ export const SmallTitle = styled.h3`
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: #fff;
 `;
 
 export const SmallDescription = styled.p`
   font-size: 0.875rem;
   color: #666;
+  color:#f0f0f0 ;
 `;
