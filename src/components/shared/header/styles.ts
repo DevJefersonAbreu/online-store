@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   width: 100%;
-  position: fixed; /* Fixa o header no topo */
+  position: fixed; 
   top: 0;
   left: 0;
   z-index: 1000;
@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
 export const TopBanner = styled.div`
   background-color: #1a4b7c;
   color: white;
-  padding: 8px 16px;
+  padding: 10px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@ export const TopBanner = styled.div`
 
 export const MainHeader = styled.div`
   background-color: #29a7e1;
-  padding: 16px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between; /* Espaça os itens */
