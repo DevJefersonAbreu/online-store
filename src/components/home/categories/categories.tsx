@@ -2,16 +2,19 @@
 
 import React from "react";
 import * as S from "./styles";
-import { ShoppingBag } from 'lucide-react';
-
+import LogoSample from "@/assets/LogoSample_ByTailorBrands-Photoroom.png"; 
+import whey from "@/assets/whey.png"; 
+import creatina from "@/assets/creatina.png";
+import termogenico from "@/assets/termogenico.png";
+import preTreino from "@/assets/pré-treino.png";
+import hipercalorico from "@/assets/hipercalorico.png";
 const Categories: React.FC = () => {
   const categories = [
-    { name: "Creatina", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Whey Protein", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Termogênicos", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Pré-treinos", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Hipercalóricos", image: "/placeholder.svg?height=200&width=200" },
-    
+    { name: "Creatina", image: creatina }, 
+    { name: "Whey Protein", image: whey},
+    { name: "Termogênicos", image: termogenico },
+    { name: "Pré-treinos", image: preTreino },
+    { name: "Hipercalóricos", image: hipercalorico },
   ];
 
   return (
@@ -22,17 +25,15 @@ const Categories: React.FC = () => {
           {categories.map((category, index) => (
             <S.CategoryCard key={index} href={`/categoria/${category.name.toLowerCase()}`}>
               <S.CategoryImage>
-                <img src={category.image} alt={category.name} />
+                <img src={category.image.src} alt={category.name} />
               </S.CategoryImage>
               <S.CategoryName>{category.name}</S.CategoryName>
             </S.CategoryCard>
           ))}
         </S.CategoryGrid>
       </S.Content>
-  
     </S.Container>
   );
 };
 
 export default Categories;
-

@@ -5,8 +5,8 @@ export const HeaderContainer = styled.header`
   position: fixed; /* Fixa o header no topo */
   top: 0;
   left: 0;
-  z-index: 1000; /* Garante que o header ficará acima de outros elementos */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destaque */
+  z-index: 1000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
 export const TopBanner = styled.div`
@@ -16,6 +16,21 @@ export const TopBanner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+  }
+
+  select {
+    margin-left: auto;
+    padding: 4px;
+    outline: none;
+    cursor: pointer;
+  }
 `;
 
 export const MainHeader = styled.div`
@@ -23,18 +38,21 @@ export const MainHeader = styled.div`
   padding: 16px;
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between; /* Espaça os itens */
 `;
 
 export const Logo = styled.img`
   height: 40px;
   object-fit: contain;
+  margin-right: auto; 
 `;
 
 export const SearchContainer = styled.div`
   flex: 1;
   max-width: 600px;
   position: relative;
+  display: flex;
+  justify-content: center; 
 `;
 
 export const SearchInput = styled.input`
@@ -62,7 +80,8 @@ export const SearchButton = styled.button`
 export const ActionsContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
+  margin-left: auto;
 `;
 
 export const ActionButton = styled.button`
@@ -74,6 +93,10 @@ export const ActionButton = styled.button`
   color: white;
   cursor: pointer;
   font-size: 14px;
+
+  span {
+    margin-left: 4px;
+  }
 `;
 
 export const CartCount = styled.span`
