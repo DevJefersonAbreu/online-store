@@ -1,7 +1,7 @@
 "use client";
 
 import * as S from "./styles";
-import blog1 from '@/assets/blog1.jpg';
+import blog1 from '@/assets/blog1.avif';
 import blog2 from '@/assets/blog2.jpg';
 import blog3 from '@/assets/blog3.jpg';
 import blog4 from '@/assets/blog4.avif';
