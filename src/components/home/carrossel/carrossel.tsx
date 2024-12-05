@@ -3,7 +3,10 @@
 import React, { useState } from 'react';
 import * as S from './styles';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import brunosuplementos from '@/assets/bruno suplementos.png';
+import bcaa from '@/assets/bcaa.jpg';
+import supplement from '@/assets/supplement.jpg';
+import creatine from '@/assets/creatine.jpg';
+import dumbbells from '@/assets/dumbbells.jpg';
 
 const slides = [
   {
@@ -11,28 +14,28 @@ const slides = [
     title: "ENCERRE O ANO NA SUA MELHOR VERSÃO",
     discount: "10% OFF",
     cta: "QUERO APROVEITAR",
-    image: brunosuplementos, 
+    image: creatine, 
   },
   {
     id: 2,
     title: "AUMENTE SEU DESEMPENHO",
     discount: "20% OFF",
     cta: "QUERO APROVEITAR",
-    image: brunosuplementos, 
+    image: bcaa, 
   },
   {
     id: 3,
     title: "TENHA MAIS ENERGIA",
     discount: "15% OFF",
     cta: "QUERO APROVEITAR",
-    image: brunosuplementos, 
+    image: supplement, 
   },
   {
     id: 4,
     title: "SUPLEMENTOS PARA TODOS OS OBJETIVOS",
     discount: "5% OFF",
     cta: "QUERO APROVEITAR",
-    image: brunosuplementos, 
+    image: dumbbells, 
   },
 
 ];
@@ -52,7 +55,7 @@ export const Carousel = () => {
     <S.CarouselContainer>
       <S.CarouselSlide>
         <S.SlideImage
-          src={slides[currentSlide].image.src} // Use `.src` para obter o caminho
+          src={slides[currentSlide].image.src} 
           alt={slides[currentSlide].title}
         />
         <S.SlideContent>

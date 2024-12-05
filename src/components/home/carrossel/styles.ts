@@ -2,27 +2,26 @@ import styled from 'styled-components';
 
 export const CarouselContainer = styled.div`
   position: relative;
-  width: 100vw; /* Ocupa toda a largura da tela */
+  width: 100vw; 
   height: 500px;
   overflow: hidden;
-  margin: 0; /* Remove qualquer margem extra */
-  padding: 0; /* Remove qualquer preenchimento extra */
+  margin: 0;
+  padding: 0; 
   @media (max-width: 768px) {
-    height: 300px; /* Ajusta a altura para telas menores */
-  }
+    height: 300px; 
 `;
 
 export const CarouselSlide = styled.div`
   position: relative;
-  width: 100%; /* Garante que ocupe toda a largura disponível */
+  width: 100%; 
   height: 100%;
-  transition: transform 0.5s ease-in-out; /* Transição suave */
+  transition: transform 0.5s ease-in-out; 
 `;
 
 export const SlideImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz com que a imagem cubra toda a área */
+  object-fit: cover; 
 `;
 
 export const SlideContent = styled.div`
@@ -32,10 +31,10 @@ export const SlideContent = styled.div`
   transform: translateY(-50%);
   color: white;
   z-index: 2;
-  max-width: 80%; /* Limita a largura para dispositivos menores */
+  max-width: 80%; 
   @media (max-width: 768px) {
     left: 5%;
-    text-align: center; /* Centraliza o texto em telas menores */
+    text-align: center; 
   }
 `;
 
@@ -45,7 +44,7 @@ export const SlideTitle = styled.h2`
   margin-bottom: 1rem;
   text-transform: uppercase;
   @media (max-width: 768px) {
-    font-size: 2rem; /* Diminui o tamanho da fonte em telas pequenas */
+    font-size: 2rem; 
   }
 `;
 
@@ -55,12 +54,12 @@ export const SlideDiscount = styled.div`
   color: white;
   margin-bottom: 2rem;
   @media (max-width: 768px) {
-    font-size: 2.5rem; /* Reduz o tamanho da fonte para dispositivos menores */
+    font-size: 2.5rem;
   }
 `;
 
 export const SlideButton = styled.button`
-  background-color: #ff0000;
+  background-color: #29a7e1;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -72,12 +71,12 @@ export const SlideButton = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #cc0000;
+    background-color: #1a4b7c;
   }
 
   @media (max-width: 768px) {
-    padding: 0.8rem 1.5rem; /* Ajusta o padding para telas menores */
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    padding: 0.8rem 1.5rem; 
+    font-size: 1rem; 
   }
 `;
 
@@ -90,7 +89,7 @@ export const CarouselButton = styled.button<CarouselButtonProps>`
   top: 50%;
   ${props => props.position}: 20px;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #1a4b7c;
   color: white;
   border: none;
   border-radius: 50%;
@@ -108,6 +107,6 @@ export const CarouselButton = styled.button<CarouselButtonProps>`
 
   @media (max-width: 768px) {
     width: 35px;
-    height: 35px; /* Ajusta o tamanho dos botões para telas menores */
+    height: 35px; 
   }
 `;

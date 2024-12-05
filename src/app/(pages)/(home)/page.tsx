@@ -6,7 +6,7 @@ import Header from "@/components/shared/header/header";
 import Blog from "@/components/home/blog/blog";
 import Categories from "@/components/home/categories/categories";
 import Carrossel from "@/components/home/carrossel/carrossel";
-
+import ProductCard from "@/components/home/productCard/productCard";
 
 
 const Home: React.FC = () => {
@@ -15,6 +15,7 @@ const Home: React.FC = () => {
       <Header />
       <Carrossel />
       <Categories/>
+      <ProductCard />
       <Blog />
       <Footer />
     </S.Container>
