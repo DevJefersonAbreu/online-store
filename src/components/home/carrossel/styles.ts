@@ -9,6 +9,7 @@ export const CarouselContainer = styled.div`
   padding: 0; 
   @media (max-width: 768px) {
     height: 300px; 
+  }
 `;
 
 export const CarouselSlide = styled.div`
