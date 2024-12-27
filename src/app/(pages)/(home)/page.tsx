@@ -18,10 +18,7 @@ const Home: React.FC = () => {
       <Header />
       <Carrossel />
       <Categories/>
-      <ProductCard />
-
-
-    
+  
       <Blog />
       <Footer />
     </S.Container>
