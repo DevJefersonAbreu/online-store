@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       <Header />
       <Carrossel />
       <Categories/>
-      <ProductCard title={""} imageUrl={""} rating={0} reviews={0} originalPrice={0} currentPrice={0} installments={0} installmentPrice={0} pixPrice={0} discount={0}/>
+      <ProductCard/>
       <Blog />
       <Footer />
     </S.Container>
