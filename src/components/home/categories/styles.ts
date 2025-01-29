@@ -1,84 +1,88 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #f8f9fa;
-`;
-
-export const Content = styled.main`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1rem;
-  flex: 1;
-`;
+  padding: 20px;
+`
 
 export const Title = styled.h1`
-  font-size: 2rem;
-  color: #1a3c61;
   text-align: center;
-  margin-bottom: 3rem;
-  font-weight: bold;
+  color: #000;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 600;
+`
 
-  @media (min-width: 768px) {
-    font-size: 2.5rem;
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
   }
-`;
+  
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+`
 
-export const CategoryGrid = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem; 
-  margin-top: 2rem;
-`;
+export const CategoryCard = styled.div`
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
 
-export const CategoryCard = styled.a`
+  &:hover {
+    transform: scale(1.02);
+  }
+`
+
+export const CategoryBackground = styled.div<{ bgImage: string }>`
+  position: absolute;
+  inset: 0;
+  background-image: url(${props => props.bgImage});
+  background-size: cover;
+  background-position: center;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+`
+
+export const CategoryContent = styled.div`
+  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
-  text-decoration: none;
-  transition: transform 0.3s;
-  width: 200px;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+`
 
-  &:hover {
-    transform: translateY(-8px);
-  }
-`;
-
-export const CategoryImage = styled.div`
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  border: 4px solid #40b7e5;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: white;
-
-  img {
+export const Icon = styled.div`
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  
+  svg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
   }
-
-  ${CategoryCard}:hover & img {
-    transform: scale(1.1);
-  }
-`;
+`
 
 export const CategoryName = styled.h2`
-  font-size: 1.25rem;
-  color: #1a3c61;
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
-  margin: 0;
-  font-weight: 600;
+  text-transform: uppercase;
+`
 
-  @media (min-width: 768px) {
-    font-size: 1.5rem;
-  }
-`;

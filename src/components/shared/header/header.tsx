@@ -14,7 +14,7 @@ import {
   CartCount,
 } from "./styles";
 import { Search, User, Heart, Phone, ShoppingCart } from "lucide-react";
-import LogoImage from "@/assets/LogoSample.jpg"; 
+import LogoImage from "@/assets/logo.png"; 
 
 export default function Header() {
   return (

@@ -12,13 +12,14 @@ import ProductCard from "@/components/home/productCard/productCard";
 
 
 
+
 const Home: React.FC = () => {
   return (
     <S.Container>
       <Header />
       <Carrossel />
       <Categories/>
-  
+      <ProductCard/>
       <Blog />
       <Footer />
     </S.Container>
